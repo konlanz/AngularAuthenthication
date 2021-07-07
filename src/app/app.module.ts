@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+//import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -22,7 +25,9 @@ import { BoardUserComponent } from './board-user/board-user.component';
     BoardUserComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
