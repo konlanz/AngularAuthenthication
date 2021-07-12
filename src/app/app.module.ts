@@ -14,6 +14,7 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
