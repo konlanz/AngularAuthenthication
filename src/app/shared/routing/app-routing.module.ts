@@ -12,7 +12,7 @@ import { VoteComponent } from 'src/app/components/vote/vote.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
-  {path: '/dashboard/vote', component: VoteComponent, canActivate: [AuthGuard]},
+  {path: 'dashboard/vote', component: VoteComponent, canActivate: [AuthGuard]},
   { path: 'sign-in', component: SignInComponent},
   { path: 'register-user', component: SignUpComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
