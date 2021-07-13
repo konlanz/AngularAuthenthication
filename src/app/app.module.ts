@@ -23,6 +23,8 @@ import { environment } from '../environments/environment';
 
 // Auth service
 import { AuthService } from "./shared/services/auth.service";
+import { VoteComponent } from './components/vote/vote.component';
+import { AddcandComponent } from './components/addcand/addcand.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { AuthService } from "./shared/services/auth.service";
     SignUpComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    VoteComponent,
+    AddcandComponent
   ],
   imports: [
     BrowserModule,
