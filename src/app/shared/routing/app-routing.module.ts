@@ -8,9 +8,11 @@ import { ForgotPasswordComponent } from '../../components/forgot-password/forgot
 import { VerifyEmailComponent } from '../../components/verify-email/verify-email.component';
 
 import { AuthGuard } from "../../shared/guard/auth.guard";
+import { VoteComponent } from 'src/app/components/vote/vote.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
+  {path: '/dashboard/vote', component: VoteComponent, canActivate: [AuthGuard]},
   { path: 'sign-in', component: SignInComponent},
   { path: 'register-user', component: SignUpComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
